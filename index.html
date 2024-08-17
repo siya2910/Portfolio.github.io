@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIYA's-Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>CSE Student</p>
+                <h1>Hi,I'm <Span>Siya</Span> Mandal From India</h1>
+
+            </div>
+        </div>
+    </div>
+<!---About--->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/photo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello,
+                        I am a second-year Computer Science Engineering student with a passion for TECHNOLOGY and INNOVATION. Currently, I am deepening my knowledge in core programming languages, data structures, and algorithms while exploring areas like software development and machine learning. I am eager to apply my academic learning through practical experience and am actively seeking opportunities to contribute to projects and collaborate with professionals in the field. My goal is to continuously develop my skills and stay at the forefront of technological advancements.
+                        <br>Thank you!</p>
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link"onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                     </div>
+                     <div class="tab-contents active-tab" id="Skills">
+                       <ul>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                       </ul>
+                     </div>
+                     <div class="tab-contents" id="Experience">
+                        <ul>
+                        <li><span>2023-Current</span><br>CSE Student</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        </ul>
+                     </div>
+                     <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2023-2028</span><br>BTECH Cse from CENTRAL UNIVERSITY OF JHARKHAND</li>
+                        <li><span>2020-2022</span><br>Intermediate from Holy Mission High School</li>
+                        <li><span>2020</span><br>Matriculate Holy Mission High School</li>
+                        </ul>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----services-->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
