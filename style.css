@@ -19,6 +19,12 @@ body{
 .container{
     padding: 10px 10%;
 }
+.text{
+    overflow: hidden;
+    font-size:3.6rem;
+    font-weight:700;
+    border-right:0.15em solid orange;
+    white-space:nowrap;
 nav{
     display: flex;
     align-items: center;
